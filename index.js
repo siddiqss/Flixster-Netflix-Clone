@@ -6,7 +6,7 @@ const authRoute = require("./Routes/auth");
 const userRoute = require("./Routes/users");
 const movieRoute = require("./Routes/movies");
 const listRoute = require("./Routes/lists");
-
+const path = require('path');
 dotenv.config();
 
 mongoose
