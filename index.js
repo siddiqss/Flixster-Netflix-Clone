@@ -6,18 +6,17 @@ const authRoute = require("./Routes/auth");
 const userRoute = require("./Routes/users");
 const movieRoute = require("./Routes/movies");
 const listRoute = require("./Routes/lists");
-const path = require('path');
-const cors = require('cors');
+const path = require("path");
+const cors = require("cors");
 dotenv.config();
 
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
   })
   .then(() => console.log("DB connection successful!"))
   .catch((err) => console.log(err));
-
 
 app.use(express.json());
 
@@ -33,8 +32,8 @@ app.use("/api/lists", listRoute);
 
 app.use(express.static(path.join(__dirname, "/Frontend/build")));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/Frontend/build', 'index.html'));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/Frontend/build", "index.html"));
 });
 
 app.listen(process.env.PORT || 5000, () => {
