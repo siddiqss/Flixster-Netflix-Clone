@@ -23,7 +23,7 @@ function Featured({ type, setGenre }) {
       }
     };
     getRandomContent();
-  }, [type]);
+  }, [type, axiosInstance]);
 
   return (
     <div className='featured'>

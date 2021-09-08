@@ -35,7 +35,7 @@ function Home({ type }) {
       }
     };
     getRandomLists();
-  }, [type, genre]);
+  }, [type, genre, axiosInstance]);
 
 
   return (

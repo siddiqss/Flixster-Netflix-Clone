@@ -29,7 +29,7 @@ function ListItem({ item, index }) {
       }
     };
     getMovie();
-  },[item]);
+  },[item, axiosInstance]);
   
   return (
     <Link to={{pathname: "/watch", movie: {movie}}}>
