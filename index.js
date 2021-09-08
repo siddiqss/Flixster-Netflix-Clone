@@ -21,8 +21,7 @@ mongoose
 app.use(express.json());
 
 app.use(cors({
-  origin:"https://flixster-netflix-clone.herokuapp.com/",
-  credentials: true
+  origin:"https://flixster-netflix-clone.herokuapp.com/"
 }));
 
 app.use("/api/auth", authRoute);
