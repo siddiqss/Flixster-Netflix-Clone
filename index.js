@@ -16,7 +16,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("DB connection successful!"))
-  .catch((err) => console.log(`Mongo Err: ${err}`));
+  .catch((err) => console.log(err));
 
 app.use(express.json());
 
