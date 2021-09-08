@@ -14,6 +14,8 @@ mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: true
   })
   .then(() => console.log("DB connection successful!"))
   .catch((err) => console.log(err));
@@ -34,7 +36,9 @@ app.use("/api/lists", listRoute);
 app.use(express.static(path.join(__dirname, "/Frontend/build")));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/Frontend/build', 'index.html'));
+  res.sendFile(path.join(__di
+    useCreateIndex: true,
+    useFindAndModify: truername, '/Frontend/build', 'index.html'));
 });
 
 app.listen(process.env.PORT || 5000, () => {
