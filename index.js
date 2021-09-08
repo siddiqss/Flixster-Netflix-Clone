@@ -16,13 +16,11 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("DB connection successful!"))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(`Mongo Err: ${err}`));
 
 app.use(express.json());
 
-app.use(cors({
-  origin:"https://flixster-netflix-clone.herokuapp.com/"
-}));
+app.use(cors());
 
 app.use("/api/auth", authRoute);
 
