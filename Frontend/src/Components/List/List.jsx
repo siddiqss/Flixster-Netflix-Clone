@@ -21,7 +21,6 @@ function List({list}) {
         }
     };
 
-    console.log(list);
     return (
         <div className="list">
             <span className="listTitle">{list.title}</span>
