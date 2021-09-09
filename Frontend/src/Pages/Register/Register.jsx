@@ -16,7 +16,6 @@ function Register() {
   const usernameRef = useRef();
 
   const axiosInstance = axios.create({baseURL: process.env.REACT_APP_API_URL});
-  
 
   const handleFinish = async (e) => {
     e.preventDefault();
@@ -36,7 +35,7 @@ function Register() {
       <div className='top'>
         <div className='wrapper'>
           <img src={logo} alt='' className='logo' />
-          <button className='loginButton'>Sign In</button>
+          <button className='loginButton' onClick={()=>history.push("/login")}>Sign In</button>
         </div>
       </div>
       <div className='container'>
