@@ -45,7 +45,7 @@ function Home({ type }) {
 
       {lists.map((list)=>{
         
-        return (<List list={list} key={list._id}/>)
+        return (<List list={list} />)
       })}
     </div>
   );
