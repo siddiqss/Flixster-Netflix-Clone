@@ -12,7 +12,7 @@
 
 ## Usage
 - Clone the repo
-- cd to API directory and install all the dependencies using `yarn`
+- Install all the dependencies using `yarn`
 - Create a .env file and store the MONGO_URL and SECRET_KEY. Make sure that you provide the correct Mongo URI and secret key can be anything (it's for security purpose)
 - Now run `yarn start` to start the API server
 - Open another terminal, cd into Frontend and install dependencies using `yarn`
