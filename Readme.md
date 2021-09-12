@@ -10,6 +10,12 @@
 - MongoDB
 - Firebase Storage for storing movies
 
+## Demo
+- Go to https://flixster-netflix-clone.herokuapp.com/
+- Enter your email
+- Add username and password and click Start
+- Now goto login, enter your credentials and click Sign In
+
 ## Usage
 - Clone the repo
 - Install all the dependencies using `yarn`
