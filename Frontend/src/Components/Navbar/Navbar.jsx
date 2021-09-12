@@ -8,8 +8,12 @@ import { logout } from "../../authContext/AuthActions";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const {dispatch} = useContext(AuthContext);
+  const [isClicked, setIsClicked] = useState(false);
+  const { dispatch } = useContext(AuthContext);
 
+  const handleClick = () => {
+    setIsClicked(true);
+  };
 
   window.onscroll = () => {
     setIsScrolled(window.pageYOffset === 0 ? false : true);
@@ -21,14 +25,14 @@ function Navbar() {
       <div className='container'>
         <div className='left'>
           <img src={logo} alt='' />
-          <Link to="/" className="link">
+          <Link to='/' className='link'>
             <span>Homepage</span>
           </Link>
-          <Link to="series" className="link">
-          <span className="navbarmainlinks">Series</span>
+          <Link to='series' className='link'>
+            <span className='navbarmainlinks'>Series</span>
           </Link>
-          <Link to="movies" className="link">
-          <span className="navbarmainlinks">Movies</span>
+          <Link to='movies' className='link'>
+            <span className='navbarmainlinks'>Movies</span>
           </Link>
           <span>New and Popular</span>
           <span>My List</span>
@@ -42,10 +46,10 @@ function Navbar() {
             alt=''
           />
           <div className='profile'>
-            <ArrowDropDown className='icon' />
+            <ArrowDropDown className='icon' onClick={handleClick} />
             <div className='options'>
               <span>Settings</span>
-              <span onClick={()=> dispatch(logout())}>Logout</span>
+              <span onClick={() => dispatch(logout())}>Logout</span>
             </div>
           </div>
         </div>
