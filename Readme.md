@@ -27,4 +27,4 @@
 
 ![Series Page](https://github.com/siddiqss/Flixster-Netflix-Clone/blob/master/Images/Series.JPG)
 
-* You need to properly setup MongoDB, MongoDB URI, SECREY KEY, otherwise, there may be issues *
+*You need to properly setup MongoDB, MongoDB URI, SECREY KEY, otherwise, there may be issues*
