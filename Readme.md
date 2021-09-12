@@ -18,7 +18,7 @@
 - Open another terminal, cd into Frontend and install dependencies using `yarn`
 - Create a .env file and assign the url of the backend server to REACT_APP_API_URL. In case of local machine, `http://localhost:PORT/api/`.
 - Run `yarn start` to start the frontend server
-- 
+  
 ### Preview
 
 ![Home Page](https://github.com/siddiqss/Flixster-Netflix-Clone/blob/master/Images/main.JPG)
